@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-family: "Monetserrat", sans-serif;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Layout */
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  image-resolution: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  border-radius: 12px;
+  width: 340px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 1.2rem;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 1rem;
+}
+
+p {
+  text-align: center;
+  margin: 1.25rem 1rem;
+  padding: 0 1rem;
+  color: #7e828e;
+}
+
+.membership-price {
+  color: #7e828e;
+}
+
+.plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f8f9fe;
+  border-radius: 12px;
+  margin: 0 1.5rem 1rem 1.5rem;
+  padding: 0.75rem 0.25rem 0.75rem 0.25rem;
+}
+
+.icon {
+  margin: 0 auto;
+}
+
+.offer {
+  text-align: center;
+  margin-left: -8%;
+}
+
+.change {
+  margin-right: -3%;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.btn-clr,
+.btn-nclr {
+  color: white;
+  margin: 0 1.5rem 0 1.5rem;
+  border-style: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.btn-clr {
+  background-color: hsl(245, 75%, 52%);
+  padding: 1rem;
+  cursor: pointer;
+  box-shadow: 0 15px 65px hwb(245 55% 15%);
+}
+
+.btn-nclr {
+  color: hsl(224, 23%, 55%);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+
+}
+
+.btn-clr:hover,
+.btn-clr:active,
+.btn-clr:focus {
+    background-color: #746CEA;
+}
+
+.btn-nclr:hover,
+.btn-nclr:active,
+.btn-nclr:focus {
+    color:black;
+}
