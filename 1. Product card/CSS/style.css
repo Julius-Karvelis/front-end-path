@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Monetserrat", sans-serif;
+  padding: 0;
+}
+
+/* layout */
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container,
+img {
+  width: 375px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.content {
+  padding: 1.5rem 1.25rem;
+}
+.second-image {
+    display: none;
+  }
+
+.title {
+    display: flex;
+    padding-bottom: 0.5rem;
+
+}
+
+/* typography */
+
+h1 {
+  font-family: "Fraunces", serif;
+  margin: 0.25rem 0 0.25rem 0;
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+}
+
+.title,
+.description {
+  color: hsl(228deg 6% 57%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.description {
+  line-height: 1.5rem;
+  padding-bottom: 0.75rem;
+}
+
+/* Money container */
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 1.2rem;
+}
+
+.new-price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces";
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.old-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+/* Button */
+button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1.2rem;
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: hsl(158, 59%, 16%);
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 0.8rem;
+}
+
+/* Media */
+@media only screen and (min-width: 728px) {
+
+  .container {
+    flex-direction: row;
+    background-color: white;
+    width: 660px;
+  }
+  .first-image {
+    display: none;
+  }
+  .second-image {
+    display: inline;
+    border-radius: 10px 0 0 12px;
+    width: 50%;
+  }
+  .title {
+    padding-bottom: 0.75rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0 12px 12px 0;
+    width: 50%;
+    margin-left: 1rem;
+  }
+  .price {
+    padding-bottom: 1.75rem;
+  }
+  h1 {
+    margin-right: 3rem;
+    font-size: 2.25rem;
+  }
+}
